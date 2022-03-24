@@ -1,2 +1,12 @@
 # python
-Proyectos de Python
+
+Some basic documentation of python
+
+> #### Basics
+>
+> - Operators
+> - Variables
+
+> #### Functions
+>
+> - round()
