@@ -6,7 +6,12 @@ Some basic documentation of python
 >
 > - Operators
 > - Variables
+> - Cicles
+> - Functions
+> - Lists
 
 > #### Functions
 >
 > - round()
+> - print()
+> - random()
