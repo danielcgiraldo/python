@@ -1,38 +1,20 @@
-for i in range(int(input())):
-    normal = True
-    color = True
-    real = True
-    valores = []
-    palos = []
-    for a in range(5):
-        valores.append(int(input()))
-        palos.append(input())
-    valores.sort()
-    for a in range(5):
-        valor = valores[a]
-        palo = palos[a]
-        if(a == 0):
-            ans_valor = valor
-            ans_palo = valor
-            if(valor != 10):
-                real = False
-        else:
-            if(ans_valor + 1 != valor):
-                normal = False
-            if (ans_palo != palo):
-                color = False
-                real = False
-            
-        ans_palo = palo
-        ans_valor = valor
-    if(normal and color and not real):
-        print("Escalera de color")
-    elif(real):
-        print("Escalera real")
-    elif(normal):
-        print("Escalera normal")
-    elif(color):
-        print("Color")
-    
+def generar_julianachi(max):
+    julianachi = [1, 2]
+    num = 2
+    while num<max:
+        divisores = 2
+        for i in range(2, julianachi[-1] // 2 + 1):
+            if(julianachi[-1] % i == 0):
+                divisores += 1
+        julianachi.append(julianachi[-1] + divisores)
+        num = julianachi[-1]
+    return julianachi
+
+while 6>5:
+    x = int(input())
+    if(x == 0):
+        break
+    if x in generar_julianachi(x):
+        print('Pertenece a la serie de Julianachi')
     else:
-        print("Otra mano")
+        print("No pertenece a la serie de Julianachi")
