@@ -1,5 +1,3 @@
 Hola
 MundoHola
 Mundo
-Hola
-Mundo
