@@ -4,11 +4,14 @@ Some basic documentation of python
 
 > #### Basics
 >
-> - Operators
-> - Variables
 > - Cicles
+> - Dictionaries
+> - Files
 > - Functions
 > - Lists
+> - Operators
+> - Strings
+> - Tables
 
 > #### Functions
 >
