@@ -1,28 +1,19 @@
-from calendar import monthrange
-from datetime import datetime
-
-
+# __judge42__id__ = W99hpGGnuHVLYuRM
+    
+dates = {}
 for i in range(int(input())):
-    x = input().split('/')
-    info = monthrange(int(x[2]), int(x[1]))
-    calendar = []
-    count = 1
-    for a in range(6):
-        calendar.append([])
-        for b in range(7):
-            if((a == 0 and b >= info[0]) or (a != 0 and count <= info[1])):
-                calendar[a].append(count)
-                count+=1
-            else: calendar[a].append(0)
-    print("lun\tmar\tmie\tjue\tvie\tsab\tdom")
-    for a in range(len(calendar)):
-        line = ''
-        if(a != 0 and calendar[a][0] == 0):
-            break
-        for b in range(len(calendar[0])):
-            if(calendar[a][b] != 0):
-                line += str(calendar[a][b]) + '\t'
-            else:
-                line += '\t'
-        print(line.rstrip())
-    print()
+    x = input().split(" ")
+    dias = x[1].split("-")
+    if not x[0] in list(dates.keys()):
+        dates[x[0]] = 0
+    for a in range(2, len(x)):
+        for d in dias:
+            if x[a][-1] == d:
+                dates[x[0]] += 1
+
+
+items = list(dates.items())
+items.sort(key = lambda x: x[1], reverse=True)
+for item in items:
+    date = item[0].split("/")
+    print(f"20{date[2]}-{date[1]}-{date[0]}", "=", item[1])
