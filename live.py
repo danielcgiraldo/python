@@ -1,19 +1,26 @@
-# __judge42__id__ = W99hpGGnuHVLYuRM
-    
-dates = {}
-for i in range(int(input())):
-    x = input().split(" ")
-    dias = x[1].split("-")
-    if not x[0] in list(dates.keys()):
-        dates[x[0]] = 0
-    for a in range(2, len(x)):
-        for d in dias:
-            if x[a][-1] == d:
-                dates[x[0]] += 1
-
-
-items = list(dates.items())
-items.sort(key = lambda x: x[1], reverse=True)
-for item in items:
-    date = item[0].split("/")
-    print(f"20{date[2]}-{date[1]}-{date[0]}", "=", item[1])
+for a in range(int(input())):
+    input()
+    flag = True
+    sudoku = []
+    for i in range(0, 9):
+        sudoku.append(input().split(' '))
+    for i in range(0, 9):
+        numbers = [1,2,3,4,5,6,7,8,9]
+        for j in range(9):
+            if int(sudoku[i][j]) in numbers:
+                numbers.remove(int(sudoku[i][j]))
+            else:
+                flag = False
+                break
+    for i in range(0, 9):
+        numbers = [1,2,3,4,5,6,7,8,9]
+        for j in range(9):
+            if int(sudoku[j][i]) in numbers:
+                numbers.remove(int(sudoku[j][i]))
+            else:
+                flag = False
+                break
+    if(flag):
+        print('Resuelto')
+    else:
+        print('No resuelto')
