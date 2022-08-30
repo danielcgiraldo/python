@@ -1,4 +1,4 @@
-# python
+# Python Notes
 
 Some basic documentation of python made by Daniel Castillo while learning it.
 
