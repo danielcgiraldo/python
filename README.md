@@ -23,6 +23,6 @@ Some basic documentation of python made by Daniel Castillo while learning it.
 >
 
 # Biography
->
-> - Fundamentos de Programación - Universidad Nacional de Colombia Sede Medellín
-> - https://www.coursera.org/learn/python-data-analysis
+
+- Fundamentos de Programación - Universidad Nacional de Colombia Sede Medellín
+- https://www.coursera.org/learn/python-data-analysis
