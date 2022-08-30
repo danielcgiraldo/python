@@ -2,25 +2,25 @@
 
 Some basic documentation of python made by Daniel Castillo while learning it.
 
-> #### Basics
->
-> - Cicles
-> - Dictionaries
-> - Files
-> - Functions
-> - Lists
-> - Operators
-> - Strings
-> - Tables
+#### Basics
 
-> #### Functions
->
-> - round()
-> - print()
-> - random()
+- Cicles
+- Dictionaries
+- Files
+- Functions
+- Lists
+- Operators
+- Strings
+- Tables
 
-> #### Libraries
->
+#### Functions
+
+- round()
+- print()
+- random()
+
+#### Libraries
+
 
 # Biography
 
